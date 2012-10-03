@@ -34,8 +34,8 @@ def function_delete(arg):
 
 def function_change(arg):
 	(edit, diff, locate) = arg.partition (" for ")
-	(newField, same, newValue) = change.partition("=")
-	(assignField, newSame, assignValue) = identifier.partition("=")
+	(newField, same, newValue) = edit.partition("=")
+	(assignField, newSame, assignValue) = locate.partition("=")
 	try:
 		listValues[0][newField]
 		listValues[0][assignField]
@@ -55,7 +55,7 @@ def function_order(arg):
 		try:
 			if arg.find("with") > 0:
 				(begin, center, locate) = arg.partition(" with ")
-				(field, same, number) = identifier.partition("=")
+				(field, same, number) = locate.partition("=")
 				listValues[0][field]
 				updater.writeheader()
 				for item in listValues:
@@ -63,7 +63,7 @@ def function_order(arg):
 						updater.writerow(item)
 			if arg.find("sort") > 0:
 				(begin, arrange, field) = arg.partition(" sort according to ")
-				newList = sorted(listValues, devel = itemgetter(field))
+				newList = sorted(listValues, key = itemgetter(field))
 				updater.writeheader()
 				updater.writerows(newList)
 		except KeyError as e:
