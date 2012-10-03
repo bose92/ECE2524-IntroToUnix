@@ -47,7 +47,7 @@ def function_change(arg):
 		print "The following {} or {} are not valid field names".format(newField, assignField)
 
 def function_order(arg):
-	updater = csv.DictWriter(sys.stdout, fieldrecog = listValues[0].keys(), delimiter ='|')
+	updater = csv.DictWriter(sys.stdout, listValues[0].keys(), delimiter ='|')
 	if arg == "all":
 		updater.writeheader()
 		updater.writerows(listValues)
@@ -80,7 +80,7 @@ except IOError as e:
 
 for stream in iter(sys.stdin.readline, ''):
 	findCase = {'add': function_add, 'remove': function_delete, 'set': function_change, 'list': function_order}
-	(done, nothing, changing) = data.partition(" ")
+	(done, nothing, changing) = stream.partition(" ")
 	changing = changing.rstrip("\n")
 
 	try:
