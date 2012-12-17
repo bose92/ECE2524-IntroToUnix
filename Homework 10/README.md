@@ -13,10 +13,10 @@ After completing this assignment, the user should be able to read in lines on da
 
 Since there are three essential Unix command line tasks that are to be performed, the actual content of the three tasks should make up 60% of the overal grade where each of the tasks is 20%. Partial credit will be given for answers close to producing the correct output. The partial credit penalties are listed below:
 
--20% for no answer
--2% off for each syntax error
--2% off for each missing or incorrect option that could be fixed to produce the correct output
--5% off for each missing or incorrect filter that could be fixed to produce the correct output
--5% off for each missing or incorrect argument that could be fixed to produce the correct output
--10% off if the command line does not produce the output as expected
--15% off if the command line does not produce any output
+- -20% for no answer
+- -2% off for each syntax error
+- -2% off for each missing or incorrect option that could be fixed to produce the correct output
+- -5% off for each missing or incorrect filter that could be fixed to produce the correct output
+- -5% off for each missing or incorrect argument that could be fixed to produce the correct output
+- -10% off if the command line does not produce the output as expected
+- -15% off if the command line does not produce any output
