@@ -18,17 +18,17 @@ The file numbers.dat is provided to the user along with the assignment descripti
 
 The solution provided by the user must work on any data file of this format which may contain similar content. The tasks that must be performed are as follows:
 
-Task 1:
+    Task 1:
 Create a Unix command line that returns the number of people with the 703 and 757 area code phone number. 
 
 Note: The user may not use the echo command since the echo command may workd for this particular data file but not a more extensive data file. 
 
-Task2:
+    Task2:
 Create a Unix command line that displays the information in numbers.dat with every entry in the data file with area code (919) or last name beginning with a 'J' changed to area code (303) and first letter of last name changed to 'L'.
 
 Note: Do not actually change the contents of numbers.dat but just show to standard output what it would look like with the above mentioned changes.
-
-Task 3:
+    
+    Task 3:
 Create a Unix command line that displays a list of the unique first names in the numbers.dat data file. Show the list of first names only with no repeated first names and adding an additional tab for first names that do have more than one occurence. 
 
 Note: It can be assumed that all the first names begin with a capital letter but they may have varying number of tabs in front of them.
